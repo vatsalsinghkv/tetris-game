@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Color variables for future use */
+  :root {
+    /* --color-bg: #fcfaf8; */
+    /* --color-accent: #14cf93; */
+    /* --color-accent: ##64ffda; */
+    /* --color-accent: #61dafb); */
+    /* --color-text: #383838; */
+    /* --color-dark-2: #282828; */
+    /* --color-dark-3: #a2a2a2; */
+
+    /* Light Theme */
+    /* BG */
+    --color-bg: theme(colors.slate.900);
+    --color-bg-secondary: theme(colors.slate.800);
+    /* Accent */
+    --color-primary: theme(colors.sky.500);
+    --color-secondary: theme(colors.emerald.500);
+    --color-tertiary: theme(colors.orange.500);
+    /* Text */
+    --color-text: theme(colors.slate.100);
+    --color-text-secondary: theme(colors.slate.400);
+    /* Neutral */
+    --color-dark: theme(colors.slate.900);
+    --color-light: theme(colors.white);
+    /* Dark */
+    --color-dark-1: theme(colors.slate.200);
+    --color-dark-2: theme(colors.slate.300);
+    --color-dark-3: theme(colors.slate.700);
+  }
+
+  /* @font-face {
+    font-family: 'agustina';
+    src: url('/fonts/Agustina-Signature.otf') format('opentype');
+  } */
+
+  * {
+    @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent-primary;
+  }
+}
+
+/* TYPOGRAPHY */
