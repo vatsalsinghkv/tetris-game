@@ -1,8 +1,11 @@
+import { Footer, Header } from '@/components/layout';
+
 function App() {
   return (
-    <main className='text-text-base bg-bg-primary min-h-screen'>
-      <h1 className='text-4xl text-accent-primary'>Hello World</h1>
-      <p>Game is in progress</p>
+    <main className='bg-radial text-text-base bg-bg-primary min-h-screen flex flex-col'>
+      <Header />
+      <main className='container flex-1 border border-bg-secondary'></main>
+      <Footer />
     </main>
   );
 }
