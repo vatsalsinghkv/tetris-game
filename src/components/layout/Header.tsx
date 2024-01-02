@@ -1,5 +1,6 @@
-import { cn } from '@/lib/utils/helper';
 import { LandPlot } from 'lucide-react';
+
+import { cn } from '@/lib/utils';
 
 const Header = () => {
   return (
