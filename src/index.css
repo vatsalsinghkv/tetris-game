@@ -16,7 +16,7 @@
     /* Light Theme */
     /* BG */
     --color-bg: theme(colors.slate.900);
-    --color-bg-secondary: theme(colors.slate.800);
+    --color-bg-secondary: theme(colors.slate.700);
     /* Accent */
     --color-primary: theme(colors.sky.500);
     --color-secondary: theme(colors.emerald.500);
@@ -40,6 +40,18 @@
 
   * {
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent-primary;
+  }
+
+  .bg-radial {
+    background: radial-gradient(
+      circle,
+      rgba(8, 53, 79, 1) 0%,
+      rgba(15, 23, 42, 1) 100%
+    );
+  }
+
+  .container {
+    @apply mx-auto px-6 sm:px-8 md:px-28 lg:px-20 xl:px-0 max-w-screen-lg;
   }
 }
 
